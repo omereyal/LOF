@@ -338,6 +338,6 @@ if app_mode == 'Calculate':
     else:
         average_weight = 'Can calculate average weight only for Pre-pupal and Pupa at the momment'
     st.markdown('''
-          ##  The average weight of the larvas in grams: 
+          ##  The estimated average weight of the larvas in grams: 
                 ''')
     st.text(average_weight)
