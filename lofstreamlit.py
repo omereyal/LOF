@@ -335,7 +335,8 @@ if app_mode == 'Calculate':
       average_weight = average_area*0.06637753102
     elif stage == 'Pupa':
       average_weight = average_area*0.06628851182
-    
+    else:
+        average_weight = 'Can calculate average weight only for Pre-pupal and Pupa at the momment'
     st.markdown('''
           ##  The average weight of the karvas in cm\N{SUPERSCRIPT THREE}: 
                 ''')
