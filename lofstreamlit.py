@@ -328,7 +328,7 @@ if app_mode == 'Calculate':
     
     st.plotly_chart(fig)
     if stage == '5 days old' or '7 days old' or '13 days old':
-        average_area = 'Can calculate average area only for Pre-pupal and Pupa at the momment'
+        st.markdown('***Can calculate accurate average area only for Pre-pupal and Pupa at the momment')
     st.markdown('''
           ##  The average area of the larvas in cm\N{SUPERSCRIPT TWO}: 
                 ''')
