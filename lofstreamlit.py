@@ -12,6 +12,7 @@ Original file is located at
 # function to calculate area with aruco of segmented image
 
 # import libs
+import streamlit as st
 import skimage.io as io
 import skimage
 import cv2
