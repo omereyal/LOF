@@ -326,6 +326,7 @@ if app_mode == 'Calculate':
     plotly.io.show(fig)
     # print('Average area of Larva:{a} cm^2'.format(a = average_area))
     
+    st.image(fig)
     if stage == '5 days old' or '7 days old' or '13 days old':
         average_area = 'Can calculate average area only for Pre-pupal and Pupa at the momment'
     st.markdown('''
