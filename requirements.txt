@@ -1,10 +1,10 @@
 scikit-image
-numpy
+numpy==1.23.5
 imutils
 pandas
 rembg
 matplotlib
 pandas
 plotly
-Pillow
+Pillow==9.3.0
 opencv-contrib-python==4.6.0.66
