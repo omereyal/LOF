@@ -260,7 +260,7 @@ if app_mode == 'Calculate':
 
     # choosing a k value (either with +- or with a slider)
     stage = st.sidebar.selectbox('Larva stage',
-                                  ['5 days old', '7 days old', '13 days old', 'Pre-pupal', 'Pupa'])
+                                  ['5 days old', '7 days old', '13 days old', 'Pre-pupal', 'Pupa'], index = 3)
     st.sidebar.markdown('---') # adds a devider (a line)
     
     attempts_value_slider = st.sidebar.slider('Number of attempts for k-means segmentation', value = 7, min_value = 1, max_value = 10) # slider example
