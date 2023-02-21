@@ -204,8 +204,9 @@ app_mode = st.sidebar.selectbox('Navigate',
 
 # About page
 if app_mode == 'About App':
-    st.markdown('Welcome! \nIn this app you can calculate the horizontal area of your BSF larvae and (hopefully) get an estimation of their weight. \nIn order to insure the accuracy of the results, make sure you upload an image that meets the following requirements (example below): \n1. The larvae are placed in a Petri dish on a blank white page with Aruco marker 5X5-50 (Download and print here:[link](%s). \n2. The larvae are seperated from one another and the Petri dish does not cover the Aruco marker. \n3. Make sure the image is taken in a well lighten room. \n4. The image is in jpg/jpeg format. \n\nPlease notice: Due to time limitations, the app is yet to be in its final version. For now, it works well with prepupas and pupas. \nIn the future, we hope to make every it relevant to any larva stage.\n' % url)
     url = "https://chev.me/arucogen/"
+    st.markdown('Welcome! \nIn this app you can calculate the horizontal area of your BSF larvae and (hopefully) get an estimation of their weight. \nIn order to insure the accuracy of the results, make sure you upload an image that meets the following requirements (example below): \n1. The larvae are placed in a Petri dish on a blank white page with Aruco marker 5X5-50 (Download and print here:[link](%s). \n2. The larvae are seperated from one another and the Petri dish does not cover the Aruco marker. \n3. Make sure the image is taken in a well lighten room. \n4. The image is in jpg/jpeg format. \n\nPlease notice: Due to time limitations, the app is yet to be in its final version. For now, it works well with prepupas and pupas. \nIn the future, we hope to make every it relevant to any larva stage.\n' % url)
+    
     
     #st.markdown("A link for AruCo marker generator\n [link](%s)" % url)
     image = Image.open('demo.jpg')
