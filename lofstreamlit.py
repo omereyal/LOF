@@ -209,10 +209,12 @@ if app_mode == 'About App':
     
     
     #st.markdown("A link for AruCo marker generator\n [link](%s)" % url)
-    image = Image.open('demo.jpg')
-    image = Image.open('bsf_image.jpeg')
+    image1 = Image.open('demo.jpg')
+    st.image(image1)
+    
+    image2 = Image.open('bsf_image.jpeg')
 
-    st.image(image)
+    st.image(image2)
     
     # side bar
     st.markdown(
