@@ -204,10 +204,11 @@ app_mode = st.sidebar.selectbox('Navigate',
 
 # About page
 if app_mode == 'About App':
-    st.markdown('Welcome! \nIn this app you can calculate the horizontal area of your BSF larvas and (hopefully) get an estimation of their weight. \nIn order to insure the accuracy of the results, make sure you upload an image that meets the following requirements (example below): \n1. The larvas are placed in a Petri dish on a blank white page with Aruco marker 5X5-50. \n2. The larvas are seperated from one another and the Petri dish does not cover the Aruco marker. \n3. If necessary, use a flash to light the image and make larvas different from the background. \n4. The image is in jpg/jpeg format. \n\nPlease notice: Due to time limitations, the app is yet to be in its final version. For now, it works well with prepupals and pupas. \nIn the future, we hope to make every it relevant to any larva stage.\n')
+    st.markdown('Welcome! \nIn this app you can calculate the horizontal area of your BSF larvae and (hopefully) get an estimation of their weight. \nIn order to insure the accuracy of the results, make sure you upload an image that meets the following requirements (example below): \n1. The larvae are placed in a Petri dish on a blank white page with Aruco marker 5X5-50 (Download and print here:[link](%s). \n2. The larvae are seperated from one another and the Petri dish does not cover the Aruco marker. \n3. Make sure the image is taken in a well lighten room. \n4. The image is in jpg/jpeg format. \n\nPlease notice: Due to time limitations, the app is yet to be in its final version. For now, it works well with prepupas and pupas. \nIn the future, we hope to make every it relevant to any larva stage.\n' % url)
     url = "https://chev.me/arucogen/"
     
-    st.markdown("A link for AruCo marker generator\n [link](%s)" % url)
+    #st.markdown("A link for AruCo marker generator\n [link](%s)" % url)
+    image = Image.open('demo.jpg')
     image = Image.open('bsf_image.jpeg')
 
     st.image(image)
@@ -260,7 +261,7 @@ if app_mode == 'Calculate':
 
     # choosing a k value (either with +- or with a slider)
     stage = st.sidebar.selectbox('Larva stage',
-                                  ['5 days old', '7 days old', '13 days old', 'Pre-pupal', 'Pupa'], index = 3)
+                                  ['5 days old', '7 days old', '13 days old', 'Pre-pupa', 'Pupa'], index = 3)
     st.sidebar.markdown('---') # adds a devider (a line)
     
     attempts_value_slider = st.sidebar.slider('Number of attempts for k-means segmentation', value = 7, min_value = 1, max_value = 10) # slider example
