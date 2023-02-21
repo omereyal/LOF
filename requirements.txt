@@ -1,5 +1,6 @@
+pip
 scikit-image
-numpy==1.23.5
+numpy
 imutils
 pandas
 rembg
